@@ -3,4 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="my_statusbar_color">#4c646f</color>
+    <color name="color_text">#1565C0</color>
+    <color name="color_text_click">#000</color>
+    <color name="color_toobar_details">#019AE8</color>
 </resources>
