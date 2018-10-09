@@ -20,13 +20,13 @@
         android:orientation="vertical"
         >
         <ImageView
-            android:visibility="invisible"
+
             android:layout_marginTop="110dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:layout_width="200dp"
-            android:layout_height="62dp"
-            android:src="@drawable/login_bg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bell"
             android:id="@+id/img_logo_login"
             android:adjustViewBounds="true"
             />
@@ -45,7 +45,7 @@
             android:visibility="visible"
             tools:visibility="gone"/>
         <EditText
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:hint="@string/ext_user_login"
