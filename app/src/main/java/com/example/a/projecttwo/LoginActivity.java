@@ -118,12 +118,13 @@ public class LoginActivity extends AppCompatActivity implements
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (edt_email != null || edt_pass != null) {
-                    signInEmail();
-                } else {
-                    Toast.makeText(getApplicationContext(), "null value", Toast.LENGTH_LONG).show();
-                }
+                    Intent intent = new Intent(LoginActivity.this,CustomerManagement.class);
+                    startActivity(intent);
+//                if (edt_email != null || edt_pass != null) {
+//                    signInEmail();
+//                } else {
+//                    Toast.makeText(getApplicationContext(), "null value", Toast.LENGTH_LONG).show();
+//                }
 
             }
         });
@@ -258,7 +259,7 @@ public class LoginActivity extends AppCompatActivity implements
         hideProgressDialog();
         if (user != null) {
 //            mStatusTextView.setText(getString(R.string.google_status_fmt, user.getEmail()));
-//            mDetailTextView.setText(getString(R.string.firebase_status_fmt, user.getUid()));
+//            mDetailTextVisew.setText(getString(R.string.firebase_status_fmt, user.getUid()));
 
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             showQuestionDialog(name, id, image);

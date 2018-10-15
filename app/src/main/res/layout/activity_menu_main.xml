@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".MenuActivityMain">
+    <include
+        layout="@layout/toobar_menuactivitymain"
+        android:id="@+id/toobar_menuactivitymain"
+        />
+    <ScrollView
+
+        android:layout_below="@id/toobar_menuactivitymain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/LnL_activityMenu"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <Spinner
+            android:id="@+id/spinner1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp" />
+            <Spinner
+            android:layout_margin="15dp"
+            android:id="@+id/spinner2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+             </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/LnL_activityMenu"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/RcV_ActivityMenuMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

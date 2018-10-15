@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    >
+        <TextView
+            android:id="@+id/txt_soghe_customermanagementListview"
+            android:text="10"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toLeftOf="@id/txt_trangthai_customermanagementListview"
+        android:layout_toRightOf="@id/txt_soghe_customermanagementListview"
+            android:lines="1"
+        android:layout_marginLeft="30dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:id="@+id/txt_name_customermanagementListview"
+            android:text="Lê Công Danh"
+            android:textSize="13sp"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_red_customs"
+            android:gravity="right"
+            android:id="@+id/txt_trangthai_customermanagementListview"
+            android:text="Chưa thanh toán"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</RelativeLayout>
